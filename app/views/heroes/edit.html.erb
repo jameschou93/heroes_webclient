@@ -1,0 +1,7 @@
+<h1>Edit Hero</h1>
+<%= form_tag "/heroes/#{@hero["id"]}", method: :patch do %>
+<p>Name<input type="text" name="name" value="<%= @hero["name"] %>"></p>
+<p>Power<input type="text" name="power" value="<%= @hero["power"] %>"></p>
+<p>Bad Guy<input type="text" name="bad_guy" value="<%= @hero["bad_guy"] %>"></p>
+<p><input type="submit" value="Edit"></p>
+<% end %>

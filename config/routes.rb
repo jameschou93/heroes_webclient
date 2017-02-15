@@ -3,5 +3,5 @@ Rails.application.routes.draw do
 
   # get "/heroes", to: "heroes#index"
   # get "/heroes/:id", to: "heroes#show"
-  resources :heroes, only: [:index, :show]
+  resources :heroes
 end
